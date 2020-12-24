@@ -33,6 +33,8 @@ while running:
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_RIGHT:
                 playerX += 1
+            if event.key == pygame.K_LEFT:
+                playerX -= 1
 
     player(playerX, playerY)
     pygame.display.update()
